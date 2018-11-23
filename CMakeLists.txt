@@ -16,3 +16,4 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 add_library(imgui STATIC ${SOURCES})
 target_link_libraries(imgui ${LIBRARIES})
+target_compile_definitions(imgui PRIVATE IMGUI_IMPL_OPENGL_LOADER_GLEW)
