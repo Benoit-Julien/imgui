@@ -4,12 +4,12 @@ project(Imgui)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCES
-        imgui.cpp
-        imgui_demo.cpp
-        imgui_draw.cpp
-        imgui_widgets.cpp
-        impl/imgui_impl_glfw.cpp
-        impl/imgui_impl_opengl3.cpp
+        imgui/imgui.cpp
+        imgui/imgui_demo.cpp
+        imgui/imgui_draw.cpp
+        imgui/imgui_widgets.cpp
+        imgui/impl/imgui_impl_glfw.cpp
+        imgui/impl/imgui_impl_opengl3.cpp
         )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
