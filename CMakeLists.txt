@@ -12,7 +12,7 @@ set(SOURCES
         imgui/impl/imgui_impl_opengl3.cpp
         )
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/imgui)
 
 add_library(imgui STATIC ${SOURCES})
 target_link_libraries(imgui ${LIBRARIES})
