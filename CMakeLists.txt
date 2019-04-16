@@ -19,12 +19,14 @@ set(SOURCES
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/imgui)
 
 add_library(imgui STATIC ${SOURCES})
-target_link_libraries(imgui ${LIBRARIES})
 
 if (OPENGL_LOADER_GL3W)
+    message(STATUS "Use gl3w implementation.")
     target_compile_definitions(imgui PRIVATE IMGUI_IMPL_OPENGL_LOADER_GL3W)
 elseif (OPENGL_LOADER_GLEW)
+    message(STATUS "Use glew implementation.")
     target_compile_definitions(imgui PRIVATE IMGUI_IMPL_OPENGL_LOADER_GLEW)
 elseif (OPENGL_LOADER_GLAD)
+    message(STATUS "Use glad implementation.")
     target_compile_definitions(imgui PRIVATE IMGUI_IMPL_OPENGL_LOADER_GLAD)
 endif ()
