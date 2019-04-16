@@ -3,9 +3,9 @@ project(Imgui)
 
 set(CMAKE_CXX_STANDARD 11)
 
-option(OPENGL_LOADER_GL3W "Build shared libraries" OFF)
-option(OPENGL_LOADER_GLEW "Build shared libraries" OFF)
-option(OPENGL_LOADER_GLAD "Build shared libraries" OFF)
+option(OPENGL_LOADER_GL3W "Use gl3w implementation" OFF)
+option(OPENGL_LOADER_GLEW "Use glew implementation" OFF)
+option(OPENGL_LOADER_GLAD "Use glad implementation" OFF)
 
 set(SOURCES
         imgui/imgui.cpp
